@@ -10,7 +10,7 @@ const path = {
     indexHtml: 'source/index.html',
     html: 'source/**/*.html',
     style: {
-      nativeCss: 'source/style/',
+      nativeCss: 'source/**/',
     },
     fonts: 'source/fonts/',
     script: 'source/**/*.js',
@@ -56,7 +56,7 @@ gulp.task('build-html', () => {
 
 /* сборка стилей в один файл style-min.css */
 gulp.task('build-styles', () => {
-  gulp.src(path.src.style.nativeCss + '*.*')
+  gulp.src(path.src.style.nativeCss + '*.css')
     .pipe(plumber())
     .pipe(stylelint({
       reporters: [
