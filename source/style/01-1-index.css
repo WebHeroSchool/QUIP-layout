@@ -1,0 +1,9 @@
+/* Основные стили
+
+html,
+body {
+  margin: 0;
+  font: var(--main-font-regular);
+  background: var(--main-bg-color);
+}
+*/
